@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre localisation</title>
+</head>
+<style>
+    :root {
+        --pimmary-Chocolat: rgba(255, 145, 0, 0.61);
+        --pimmary-gray: #888888;
+        --pimmary-caractere: #353131;
+        --pimmary-linear: ;
+        --pimmary-: ;
+        --pimmary-: ;
+        --paragraph-color: red;
+     }     
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+       display: grid;
+       width: 100%;
+       height: 100vh;
+       background: var(--pimmary-Chocolat);
+    }
+    iframe {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #1f1d1d;
+   }
+   .localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--pimmary-gray);
+    width: 100%;
+    height: 35px;
+   }
+   .gps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   a {
+    text-decoration: none;
+ }
+ /** L'en tete du site ***/
+ header  {
+    position: fixed;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 15px #414040;
+    width: 100%;
+    height: 80px; 
+    z-index: 5;
+ }
+ /****/ /********/
+ .head-left {
+    width: auto;
+    height: 80px;
+ }
+ .head-left .logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 80px;
+    column-gap: 40px;
+ }
+ .head-left .logo img {
+ width: 130px;
+ border-radius: 100%;
+ }
+ .head-left .logo .head-text {
+ display: flex;
+ align-items: center;
+ column-gap: 15px;
+ }
+ .head-text a {
+ font-size: 13px;
+ text-decoration: none;
+ color: black;
+ font-weight: bolder;
+ cursor: pointer;
+ transition: 0.5s;
+ border-top: 2px solid rgb(255, 255, 255);
+ }
+ .head-text a:hover {
+ border-top: 2px solid rgba(255, 145, 0, 0.61);
+ }
+ /** Monteur de recherche au milieu **/
+ .Mont-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 80px;
+ }
+ header input {
+    display: none;
+    width: 390px;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding-left: 15px;
+    color: black;
+    outline: none;
+ }
+ header input:focus {
+    outline-color: rgba(255, 145, 0, 0.61);
+    border: 2px solid rgba(255, 145, 0, 0.61);
+    box-shadow: 0 0 8px rgba(255, 219, 169, 0.61);
+ }
+ 
+ header input:hover {
+    outline-color: rgba(255, 145, 0, 0.61);
+    border: 3px solid rgba(255, 145, 0, 0.61);
+    box-shadow: 0 0 8px rgba(255, 219, 169, 0.61);
+ }
+ 
+ 
+ /** coté droite **/
+ 
+ .head-right {
+ padding-right: 55px;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ column-gap: 15px;
+ width: auto;
+ height: 80px;
+ }
+ .head-right .btn-sign {
+ border: 1px solid black;
+ border-radius: 16px;
+ width: 80px;
+ height: 30px;
+ color: black;
+ background-color: white;
+ font-weight: bolder;
+ transition: 0.5s;
+ cursor: pointer;
+ }
+ .head-right .btn-sign:hover {
+ background-color: rgba(255, 219, 169, 0.61); /** rgb(247, 73, 73) **/
+ color: rgb(0, 0, 0);
+ font-weight: bolder;
+ border: 1px solid rgba(255, 219, 169, 0.61);
+ }
+ .head-right .btn-join {
+ border-radius: 16px;
+ border: 1px solid black;
+ width: 100px;
+ height: 30px;
+ color: white;
+ background-color: black;
+ font-weight: bolder;
+ transition: 0.5s;
+ cursor: pointer;
+ }
+ .btn-join:hover {
+    border: 1px solid #747474;
+    background-color: #747474;
+ }
+ .head-right .localisalion {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ color: black;
+ width: 39px;
+ height: 39px;
+ cursor: pointer;
+ }
+ .espace {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+ }
+ 
+ h1 {
+    text-transform: uppercase;
+ }
+ 
+ .header {
+    padding-left: 10px;
+    margin-left: 2px;
+    border-radius: 20px; 
+    box-shadow: 0 0 10px gray;
+    width: 99%;
+    height: 80px; 
+    background-color: rgb(255, 255, 255); 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+ }
+</style>
+<body>
+     <!-- header de la categorie -->
+
+     <header>
+        <div class="head-left">
+            <div class="logo">
+                <img src="image.sans-font/AcceilleLogo.jpg" alt="">
+                <div class="head-text">
+                    <a href="index.html">ACCUEL</a>
+                    <a href="Apropos.html">A PROPOS</a>
+                    <a href="decouvrire.html">COMPTES</a>
+                </div>
+            </div>
+        </div>
+        <div class="Mont-search">
+            <form >
+                <input list="meal" id="list" name="list" placeholder="Tous nos produits !">
+                <datalist id="meal">
+                    <option value="Femme" >   
+                    <option value="T-shirt"> 
+                    <option value="Montre"> 
+                    <option value="Pantalon"> 
+                    <option value="Sport"> 
+                    <option value="Sac"> 
+                    <option value="Parfum"> 
+                    <option value="Porte-monnaie"> 
+                </datalist>
+            </form>
+        </div>
+        <div class="head-right">
+            <div class="localisalion" title="localisation">
+                <a href="localisation.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <!-- Icône de localisation -->
+                    </svg>
+                </a>
+            </div>
+            <a href="compte.html"><button class="btn-sign">S'inscrire</button></a>
+            <a href="#contact"><button class="btn-join" title="N ous rejoindre">contact</button></a>
+        </div>
+    </header>
+</nav>
+</header>
+<div class="espace"></div>
+
+    <div class="localisation">
+        <h3>localisation de la boutique</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+        </svg>
+    </div>
+    </table>
+    <div class="gps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196.19380449301644!2d15.243203044439257!3d-4.3610597431879965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3150407d6629%3A0xf08fe826322e141f!2sAppartements%20Arr%C3%AAt%20Gramalic!5e1!3m2!1sfr!2scd!4v1726484696120!5m2!1sfr!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+</html>

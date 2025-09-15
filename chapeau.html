@@ -4,33 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categotrie femme </title>
-    <link rel="stylesheet" href="categorie.css">
+    <link rel="stylesheet" href="css/categorie.css">
     
 </head>
 <body>
 
-    <!-- header de la categorie -->
+   <!-- header de la categorie -->
 
-    <div class="contaire">
-        <header class="navbar">
-            <div class="logo"><img src="img/AcceilleLogo.jpg" alt="patrick logo"></div>
-            <nav>
-                <ul>
-                    <li><a  href="index.html">Accueil</a></li>
-                    <li><a href="Apropos.html">Apropos</a></li>
-                    <li><a href="compte.html">comptes</a></li>
-                    <li><a href="#ancre">contact</a></li>
-                </ul>
-                    <!-- Icon du panier logd-icon -->
-
-                    <a href="Panier.html" title="Voir Panier" class="svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                          </svg>
-                     </a>
+   <header>
+    <div class="head-left">
+        <div class="logo">
+            <img src="image.sans-font/AcceilleLogo.jpg" alt="">
+            <div class="head-text">
+                <a href="index.html">ACCUEL</a>
+                <a href="Apropos.html">A PROPOS</a>
+                <a href="decouvrire.html">COMPTES</a>
+            </div>
+        </div>
+    </div>
+    <div class="Mont-search">
+        <form >
+            <input list="meal" id="list" name="list" placeholder="Tous nos produits !">
+            <datalist id="meal">
+                <option value="Femme" >   
+                <option value="T-shirt"> 
+                <option value="Montre"> 
+                <option value="Pantalon"> 
+                <option value="Sport"> 
+                <option value="Sac"> 
+                <option value="Parfum"> 
+                <option value="Porte-monnaie"> 
+            </datalist>
+        </form>
+    </div>
+    <div class="head-right">
+        <div class="localisalion" title="localisation">
+            <a href="localisation.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <!-- Icône de localisation -->
+                </svg>
+            </a>
+        </div>
+        <a href="compte.html"><button class="btn-sign">S'inscrire</button></a>
+            <a href="#contact"><button class="btn-join" title="N ous rejoindre">contact</button></a>
+        </div>
+</header>
 </nav>
 </header>
-</div>
+<div class="espace"></div>
+<!-- Mot de categorie -->
 
     <!-- Mot de categorie -->
 
@@ -46,151 +69,113 @@
     <div class="box">
         <div class="col-1">
             <img src="img/Chapeau1.jpg" alt="1">
-            <b>22,20 $/ <strong>30.000fc</strong></b>
             <p>Build, Appartement <br>immobilier,2021</p>
-            <div class="valider">
-                <input type="number" value="1" maxlength="5"><button >Ajouter</button>
-            </div>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
         </div>
 
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau2.jpg" alt="2">
                 <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button id="100">Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+                <b>22,20 $/ <strong>30.000fc</strong></b>
+                <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau3.jpg" alt="3">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button >Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau4.jpg" alt="4">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button>Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="col-1">
             <img src="img/Chapeau5.jpg" alt="5">
-            <b>22,20 $/ <strong>30.000fc</strong></b>
             <p>Build, Appartement <br>immobilier,2021</p>
-            <div class="in">
-                <input type="number" placeholder="1" value="1"><button >Ajouter</button>
-            </div>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
         </div>
 
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau6.jpg" alt="6">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button>Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau7.jpg" alt="7">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button>Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau8.jpg" alt="8">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button >Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
     </div>
     <div class="box">
         <div class="col-1">
             <img src="img/Chapeau9.jpg" alt="9">
-            <b>22,20 $/ <strong>30.000fc</strong></b>
             <p>Build, Appartement <br>immobilier,2021</p>
-            <div class="in">
-                <input type="number" placeholder="1" value="1"><button >Ajouter</button>
-            </div>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
         </div>
 
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau10.jpg" alt="10">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button >Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau11.jpg" alt="11">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button>Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
         <div class="col-1">
             <div class="col-1">
                 <img src="img/Chapeau12.jpg" alt="12">
-                <b>22,20 $/ <strong>30.000fc</strong></b>
-                <p>Bisc, Verdicchio di <br> matelica,2021</p>
-                <div class="in">
-                    <input type="number" placeholder="1" value="1"><button>Ajouter</button>
-                </div>
+                <p>Build, Appartement <br>immobilier,2021</p>
+            <b>22,20 $/ <strong>30.000fc</strong></b>
+            <code title="Couleur disponible"><span>🟢</span><span>🔴</span><span>🔵</span><span>🟡</span></code>
             </div>
         </div>
     </div>
 
- <footer>
-    <div class="your">
+    <footer>
+        <hr>
+         
+    <!-- Emplacement du copie right -->
+    <hr>
+    <div class="footer_end">
+        <p id="ancre">copyright<b>&copy;Patrick Store</b> <span>2k24</span></p> 
+    </div> 
+     </footer>
         
-    <div class="text">
-        <b>Faite vos paiement à partir :</b>
-    </div>
-    <div class="footer_res">
-        <div class="cols">
-            <img src="img/LogRorange.jpg" alt="Adresse" title="Orange Money">
-        </div>   
-        <div class="cols">        
-            <img src="img/LogRairtel.jpg" alt="Telephone" title="Airtel money">
-        </div>
-        <div class="cols">
-            <img src="img/LogRvodacom.jpg" alt="Adresse mail" title="M-pesa">
-        </div>
-    </div>
-</div>
-<!-- Emplacement du copie right -->
-<hr>
-<div class="footer_end">
-    <p id="ancre">copyright<b>&copy;Patrick Store</b> <span>2k24</span></p> 
-</div> 
- </footer>
-    
-</body>
-</html>   
+    </body>
+    </html>   

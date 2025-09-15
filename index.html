@@ -1,245 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="Plate forme des produits E-commerce pour les ventes de produits congolais" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="img/x-icon" href="img/AcceilleLogo.jpg">
-    <title>store - site de commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1280px)"
+href="petite_resolution.css" />
+    <title>Site vitrine de vente de Produits et couture</title>
 </head>
-<body class="zeldrix">
-    <!-- L'en tete de la page -->
+<body>
 
-    <section class="headerdesection">   
-
-
-        <div class="contaire">
-            <header class="navbar">
-                <div class="logo"><img src="img/AcceilleLogo.jpg" alt="patrick logo"></div>
-                <nav>
-                    <ul>
-                        <li><a class="main-x" href="index.html">Accueil</a></li>
-                        <li><a href="Apropos.html">Apropos</a></li>
-                        <li><a href="compte.html">comptes</a></li>
-                        <li><a href="#ancre">contact</a></li>
-                    </ul>
-                    <!-- Logo du panier -->
-                    <a href="Panier.html" title="Voir Panier" class="svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                          </svg>
-                     </a>
-    
-        <!-- Icon du panier logd-icon -->
-        
-                </nav>
-    
-            </header>
-        <div class="row">
-            <div class="col-2">
-                <h1>Donner à votre entrainement <br>un nouveau style!</h1>
-                <p>Le succès n’est pas toujours une question de grandeur.  <br>C’est une question de cohérence. Un travail acharné et consistant a gagner du succès. La grandeur  viendra.</p>
-                <a href="decouvrire.html">Explorez maintenant &#8594;</a> 
-            </div>
-            <div class="col-2">
-                <img src="img/TenueMiseEnValeur1.jpg" alt="landing  h">
+    <header>
+        <div class="head-left">
+            <div class="logo">
+                <img src="image.sans-font/AcceilleLogo.jpg" alt="">
+                <div class="head-text">
+                    <a href="#">ACCUEL</a>
+                    <a href="Apropos.html">A PROPOS</a>
+                    <a href="decouvrire.html">COMPTES</a>
+                    <button>#</button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- section de categories -->
-
-<section class="categories">
-    <div class="container">
-        <h2>Catégories vedettes &#8469;</h2>
-        <div class="row">
-            <div class="col-3">
-                <img class="ASgreq" src="img/CategorieSHoose.jpg" alt="coupe 1">
+        <div class="Mont-search">
+            <form >
+                <input list="meal" id="list" name="list" placeholder="Tous nos produits !">
+                <datalist id="meal">
+                    <option value="Femme" >   
+                    <option value="T-shirt"> 
+                    <option value="Montre"> 
+                    <option value="Pantalon"> 
+                    <option value="Sport"> 
+                    <option value="Sac"> 
+                    <option value="Parfum"> 
+                    <option value="Porte-monnaie"> 
+                </datalist>
+            </form>
+        </div>
+        <div class="head-right">
+            <div class="localisalion" title="localisation">
+                <a href="localisation.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <!-- Icône de localisation -->
+                    </svg>
+                </a>
             </div>
-            <div class="col-3">
-               <img class="ASgreq"  src="img/CategorieDeGilet.jpg" alt="cooupe 2">
+            <a href="compte.html"><button class="btn-sign">S'inscrire</button></a>
+            <a href="#contact"><button class="btn-join" title="N ous rejoindre">contact</button></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- cote gauche du main -->
+        <div class="rewards-left">
+            <div class="message">
+                <h1>Donner à votre entrainement <br>un nouveau style!<code></code></h1>
+                <p>Le succès n'est pas toujours une question de grandeur. <br>C'est une question de cohérence. Un travail acharné et consistant a gagner du succès. La grandeur viendra.</p>
+                <a href="maputa.html"><button>Explorez  &#8594;</button></a>
             </div>
-            <div class="col-3">
-                <img class="ASgreq"  src="img/CategorieT-shirt.jpg" alt="coupe 3">                
+            <div class="rewards-picture"><img src="image.sans-font/2categorieComplet-SANS_FONT.png" alt=""></div>
+        </div>
+        <div class="rewards-bss">
+            
+        </div>
+
+    </main>
+ <!----------------------------------------------------------------------------------------------------------------------->
+    <section class="categories">
+        <div class="container">
+            <h2>Catégories vedettes &#8469;</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img class="ASgreq" src="img/CategorieSHoose.jpg" alt="coupe 1" onclick="imagz()">
+                </div>
+                <div class="col-3">
+                    <img class="ASgreq" src="img/CategorieDeGilet.jpg" alt="cooupe 2">
+                </div>
+                <div class="col-3">
+                    <img class="ASgreq" src="img/CategorieT-shirt.jpg" alt="coupe 3">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!--
-+-------------------------------------------------------------------------------------------------------------+
-|                           meilleur produit qui nous feras explorez nos divers produits                      |
-+-------------------------------------------------------------------------------------------------------------+
--->
+<!----------------------------------------------------------------------------------------------------------------------->
 
+<!-- Section des produits en vedette -->
 <section class="feature-products">
     <h2>Meilleurs produits</h2>
-    <div class="container">           
+    <div class="container">
         <div class="row">
-            <div class="col-4">                                            
+            <div class="col-4">
                 <a href="femme.html"><img src="img/2C.Femme.jpg" alt="produit 1"></a>
-                    <h3>Categorie Femme</h3>   
-                </div>
+                <h3>Categorie Femme</h3>
+            </div>
             <div class="col-4">
                 <a href="Tshirt.html"><img src="img/2C.t-shirt.jpg" alt="produit 2"></a>
-                    <h3>Categorie T-shirt</h3>
-                </div>
+                <h3>Categorie T-shirt</h3>
+            </div>
             <div class="col-4">
                 <a href="Pantalon.html"><img src="img/2C.Pantalon.jpg" alt="produit 3"></a>
-                    <h3>Categorie Pantalon</h3>
-                </div>
-
-             <div class="col-4">
+                <h3>Categorie Pantalon</h3>
+            </div>
+            <div class="col-4">
                 <a href="Chaussure.html"><img src="img/2C.chaussures.jpg" alt="produit 4"></a>
-                    <h3>categorie chaussures</h3>
-               </div> 
+                <h3>categorie chaussures</h3>
+            </div>
             <div class="col-4">
                 <a href="Sport.html"><img src="img/2C.Sport.jpg" alt="produit 5"></a>
-                    <h3>categorie Sport</h3>
-               </div> 
+                <h3>categorie Sport</h3>
+            </div>
             <div class="col-4">
                 <a href="sacMixte.html"><img src="img/2C.SacMixte.jpg" alt="produit 6"></a>
-                    <h3>Sac Mixte</h3>
-               </div> 
+                <h3>Sac Mixte</h3>
+            </div>
             <div class="col-4">
                 <a href="Portemonnaie.html"><img src="img/2c.SacetPortemonnaie.jpg" alt="produit 7"></a>
-                    <h3>porte-monnaie</h3>
-               </div> 
+                <h3>porte-monnaie</h3>
+            </div>
             <div class="col-4">
                 <a href="accessoire.html"><img src="img/2CategoriAccessoire.jpg" alt="produit 8"></a>
-                    <h3>categorie Accessoires</h3>
-              </div> 
+                <h3>categorie Accessoires</h3>
+            </div>
             <div class="col-4">
                 <a href="chapeau.html"><img src="img/2C.Chapeau.jpg" alt="produit 9"></a>
-                    <h3>Categorie Chapeaux</h3>
-               </div> 
-               <div class="col-4">
+                <h3>Categorie Chapeaux</h3>
+            </div>
+            <div class="col-4">
                 <a href="Montreuil.html"><img src="img/2C.Montreuil.jpg" alt="produit 10"></a>
-                     <h3>Categorie montreuil</h3>
-               </div>
-            <div class="col-a">
-                <a href="decouvrire.html">Tout afficher  &#8594;</a>
-               </div> 
-                                            
+                <h3>Categorie montreuil</h3>
+            </div>
         </div>
     </div>
 </section>
+<!---------------------------------------------------------->
 
-<!--
-+-----------------------------------------------------------------------------------------------------------------+
-|            Partie scroll automaique: une pharse de motivation consernant toute les formres et tailles           |
-+-----------------------------------------------------------------------------------------------------------------+
--->
-
-<div class="motivation">
-    <marquee behavior="sroll" direction="left">
-      <b><p>Ne l'oublier jamais que vos etes votre motivation premiere , car mise a part vous meme personne ne vous sortiras de vos probleme si c'est ne que vous meme !</p></b>
+ <!-- Section de défilement automatique -->
+ <div class="motivation">
+    <marquee behavior="scroll" direction="left">
+        <b><p>Ne l'oublier jamais que vos etes votre motivation premiere , car mise a part vous meme personne ne vous sortiras de vos probleme si c'est ne que vous meme !</p></b>
     </marquee>
 </div>
 
-
-<!--
-+------------------------------------------------+
-|              FIN DU SCROLL                     |
-+------------------------------------------------+
--->
-
-<section >
- 
-<!--
-+------------------------------------------------+
-|             Soumettez votre prix               |
-+------------------------------------------------+
--->
-
-  <div class="contenue">
-    <div class="big-img">
-        <img src="img/logosubscribe.jpg" alt="Nouvelle invasion web subcribtion">
-    </div>  
-        <div class="caligraphie-text">
-
-            <!--Renovation-->
-
-            <h1>NEW REDEMPTION</h1>
-            <h2><span style="color: orange;">Decouvrez</span>,une<br>Renovation du monde<span>E-commerce</span></h2>
-            <p>Soumettez votre prix et admirez les produits correspondant à votre qualité unique<br>explorez une nouvelle experience <b style="color: black;">E-commerce</b></p>
-    <button><a href="achat.html">Commencez</a></button>
-        </div>
-
-        <!--compléter et rehausseer <br> votre style avec <br>élégance-->
-
- </div>
-</section>
 <hr style="color: orange;">
 
-<!--Partie du bas qui demontrera le reseau et sponsort et d reconnaissance -->
-
-  <footer>
+<footer>
     <div class="your">
-        <img src="img/logoHouse.jpg" alt="img maison">
-        
-    <div class="text">
-        <b><p>Nos contact</p></b>
-    </div>
-    </div>
-<div class="footer_int">
-    <div class="col-5">
-        
-        <img src="img/logoAdresse.jpg" alt="Adresse">
-        <div class="note">
-            <h1>Adresse</h1>
-            <p>N°35 Av.Kodjo, lubudi,<br>Ngaliema - Arrêt<br>gramalic, kinshasa,RDC</p>
-        </div>
-    </div>   
-    <div class="col-5">        
-        <img src="img/logotelephone.jpg" alt="Telephone">
-        <div class="note">
-            <h1>Telephone</h1>
-            <p>+243 832 124 163</p>    
-        </div>
-           </div>
-    <div class="col-5">
-        <div class="note">
-
-        </div>
-        <img src="img/logoMail.jpg" alt="Adresse mail">
-        <div class="note">
-            <h1>Adresse mail</h1>
-        <p>PattheRightplace@gmail.com</p>
+        <img src="img/logoHouse.jpg" alt="img maison" id="contact">
+        <div class="text">
+            <b><p>Nos contact</p></b>
         </div>
     </div>
-    <div class="col-5">
-        <img src="img/logohoraire.jpg" alt="Nos horaires">
-        <div class="note">
-            <h1>Nos horaires</h1>
-            <p>Lundi - Vendredi: 8h30 à<br>
-                17h30 Samedi: 8h00 à 12h00 
-            </p>
+    <div class="footer_int">
+        <div class="col-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+            </svg>
+            <div class="note">
+                <h1>Adresse</h1>
+                <p>N°35 Av.Kodjo, lubudi,<br>Ngaliema - Arrêt<br>gramalic, kinshasa,RDC</p>
+            </div>
+        </div>
+        <div class="col-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>
+            <div class="note">
+                <h1>Telephone</h1>
+                <p>+243 832 124 163 <br> +243 979 735 172</p>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="note">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg>
+            <div class="note">
+                <h1>Adresse mail</h1>
+                <p>PattheRightplace@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9z"/>
+                <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1zm1.038 3.018a6 6 0 0 1 .924 0 6 6 0 1 1-.924 0M0 3.5c0 .753.333 1.429.86 1.887A8.04 8.04 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5M13.5 1c-.753 0-1.429.333-1.887.86a8.04 8.04 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1"/>
+            </svg>
+            <div class="note">
+                <h1>Nos horaires</h1>
+                <p>Lundi - Vendredi: 8h30 à<br>
+                    17h30 Samedi: 8h00 à 12h00 
+                </p>
+            </div>
         </div>
     </div>
-</div>
-<!-- reseau -->
 
-<div class="footer_res">
-    <div class="cols">
-        <img src="img/LogRorange.jpg" alt="Adresse" title="Disponible dans le Panier">
-    </div>   
-    <div class="cols">        
-        <img src="img/LogRairtel.jpg" alt="Telephone" title="Disponible dans le Panier">
+    <div class="footer_end">
+        <p id="ancre">copyright<b>&copy;Patrick Store</b> <span>2k24</span></p> 
     </div>
-    <div class="cols">
-        <img src="img/LogRvodacom.jpg" alt="Adresse mail" title="Disponible dans le Panier">
-    </div>
-</div>
-
-<!-- 
-
-Emplacement du copie right -->
-
-<div class="footer_end">
-    <p id="ancre">copyright<b>&copy;Patrick Store</b> <span>2k24</span></p> 
-</div>
-  </footer>
-</body>
-</html>
+</footer>

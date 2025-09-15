@@ -1,0 +1,555 @@
+:root {
+    --pimmary-Chocolat: rgba(255, 145, 0, 0.61);
+    --pimmary-gray: #888888;
+    --pimmary-caractere: #353131;
+    --paragraph-color: red;
+    --main-linear-color: linear-gradient(to bottom, #7B3F00, #FFDFBA);
+    --default-margin: 200px;
+    --even-main-background-color: #ffffff;
+    --even-black-border: 1px solid black;
+}
+
+* {
+   font-size: "poppins", sans-serif;
+}
+
+body {
+   overflow-x: hidden;
+   padding: 0;
+   margin: 0;
+   background-color: rgba(255, 247, 236, 0.61);
+}
+a {
+    text-decoration: none;
+}
+/** L'en tete du site ***/
+header  {
+    position: fixed;
+    background-color: var(--even-main-background-color);
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 0 15px #414040;
+    width: 100%;
+    height: 80px; 
+    z-index: 5;
+}
+/****/ /********/
+.head-left {
+    width: auto;
+    height: 80px;
+}
+.head-left .logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 80px;
+    column-gap: 40px;
+}
+.head-left .logo img {
+width: 130px;
+border-radius: 100%;
+}
+.head-left .logo .head-text {
+display: flex;
+align-items: center;
+column-gap: 15px;
+}
+
+.head-text a {
+font-size: 13px;
+text-decoration: none;
+color: black;
+font-weight: bolder;
+cursor: pointer;
+transition: 0.5s;
+border-top: 2px solid rgb(255, 255, 255);
+}
+.head-text a:hover {
+border-top: 2px solid rgba(255, 145, 0, 0.61);
+}
+.head-left button {
+    display: none;
+}
+/** Monteur de recherche au milieu **/
+.Mont-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 80px;
+}
+header input {
+    width: 390px;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding-left: 15px;
+    color: black;
+    outline: none;
+}
+header input:focus {
+    outline-color: rgba(255, 145, 0, 0.61);
+    border: 2px solid rgba(255, 145, 0, 0.61);
+    box-shadow: 0 0 8px rgba(255, 219, 169, 0.61);
+}
+
+header input:hover {
+    outline-color: rgba(255, 145, 0, 0.61);
+    border: 3px solid rgba(255, 145, 0, 0.61);
+    box-shadow: 0 0 8px rgba(255, 219, 169, 0.61);
+}
+
+
+/** coté droite **/
+
+.head-right {
+padding-right: 55px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+column-gap: 15px;
+width: auto;
+height: 80px;
+}
+.head-right .btn-sign {
+border: 1px solid black;
+border-radius: 16px;
+width: 80px;
+height: 30px;
+color: black;
+background-color: white;
+font-weight: bolder;
+transition: 0.5s;
+cursor: pointer;
+}
+.head-right .btn-sign:hover {
+background-color: rgba(255, 219, 169, 0.61); /** rgb(247, 73, 73) **/
+color: rgb(0, 0, 0);
+font-weight: bolder;
+border: 1px solid rgba(255, 219, 169, 0.61);
+}
+.head-right .btn-join {
+border-radius: 16px;
+border: 1px solid black;
+width: 100px;
+height: 30px;
+color: white;
+background-color: black;
+font-weight: bolder;
+transition: 0.5s;
+cursor: pointer;
+}
+.btn-join:hover {
+    border: 1px solid #747474;
+    background-color: #747474;
+}
+.head-right .localisalion {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: black;
+width: 39px;
+height: 39px;
+cursor: pointer;
+}
+/**************************************/
+.message {
+    display: grid;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    animation: animation3 2s linear;
+}
+.message h1 {
+    font-size: 45px;
+}
+.message p {
+    font-size: 17px;
+    color: rgba(31, 18, 0, 0.61);
+}
+.message a button {
+    border: 1px solid rgb(247, 245, 245);
+    border-radius: 20px;
+    font-weight: bolder;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    width: 170px;
+    height: 35px;
+    background-color: #747474; /** rgb(247, 73, 73) **/
+    transition: 0.5s;
+    cursor: pointer;
+}
+.message a button:hover {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px silver;
+    width: 170px;
+    height: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgba(255, 219, 169, 0.61);
+}
+
+.rewards-left {
+    padding-top: 80px;
+    background: linear-gradient(to bottom, #7B3F00, #FFDFBA); /* Dégradé linéaire du chocolat vers une couleur claire */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+}
+.rewards-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    animation: animation1 2s linear;
+}
+.rewards-picture img {
+    width: 500px;
+    height: 500px;
+}
+/********************************************************/
+.rewards-bss {
+    background: linear-gradient(to bottom, #7B3F00, #FFDFBA); 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15px;
+}
+
+/********************************************************************************************************************/
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.row{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    scroll-snap-align: start;
+}  
+
+ 
+.col-2{
+    flex-basis: 40%;
+    min-width: 300px;
+}
+/*stylisation de l'image 2*/
+.col-2 img{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 65px;
+    margin: 25px;
+    color: rgb(12, 12, 12);
+}
+
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background:rgb(28, 150, 49);
+    color: white;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition: .5s;
+}
+.col-2 a:hover{
+    background-color: rgb(82, 209, 209);
+}
+
+#po:hover{
+    font-size: 15px;
+    color-scheme: red white;
+}
+
+.header-section{
+    margin-top: -20px;
+    background: radial-gradient(white, #fff);
+}
+
+/*style de la section categories*/
+
+.categories{
+    margin: 5px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto; 
+}
+
+.col-3 img{
+    width: 100%; 
+    border-radius: 5px;
+   }
+   
+.container h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #353131;
+    margin-bottom: 60px ;
+}
+
+.feature-products h2{
+    text-align: center;
+    font-size: 22px;
+    color: #353131;
+    margin: 40px 0;
+}
+
+/*section de meilleurs categories*/
+
+
+.col-4 {
+    flex-basis: 10%;
+    width:  250px;
+    height: 375px;
+    margin: 15px;
+    border: 1px solid #c5c2be;
+    border-radius: 5px;
+    box-shadow: 0 0 8px var(--pimmary-caractere);
+    background-color: #c5c2be;
+    transition: transform 0.10s;
+    
+}
+
+.col-4:hover{
+    transform: translate(-10px);
+}
+
+.col-4 img{
+    margin: 10px 13px;
+    width:  225px;
+    height: 300px;
+    border-radius: 5px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-4 p{
+    padding: 0 30px;
+    color: rgb(75, 52, 18);
+    font-size: 11px;
+    transition: .9s;
+}
+
+/*************************************************************
+html:
+<!-- Section des produits en vedette -->
+    <section class="feature-products">
+        <h2>Meilleurs produits</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="femme.html"><img src="img/2C.Femme.jpg" alt="produit 1"></a>
+                    <h3>Categorie Femme</h3>
+                </div>
+                <div class="col-4">
+                    <a href="Tshirt.html"><img src="img/2C.t-shirt.jpg" alt="produit 2"></a>
+                    <h3>Categorie T-shirt</h3>
+                </div>
+                <div class="col-4">
+                    <a href="Pantalon.html"><img src="img/2C.Pantalon.jpg" alt="produit 3"></a>
+                    <h3>Categorie Pantalon</h3>
+                </div>
+                <div class="col-4">
+                    <a href="Chaussure.html"><img src="img/2C.chaussures.jpg" alt="produit 4"></a>
+                    <h3>categorie chaussures</h3>
+                </div>
+                <div class="col-4">
+                    <a href="Sport.html"><img src="img/2C.Sport.jpg" alt="produit 5"></a>
+                    <h3>categorie Sport</h3>
+                </div>
+                <div class="col-4">
+                    <a href="sacMixte.html"><img src="img/2C.SacMixte.jpg" alt="produit 6"></a>
+                    <h3>Sac Mixte</h3>
+                </div>
+                <div class="col-4">
+                    <a href="Portemonnaie.html"><img src="img/2c.SacetPortemonnaie.jpg" alt="produit 7"></a>
+                    <h3>porte-monnaie</h3>
+                </div>
+                <div class="col-4">
+                    <a href="accessoire.html"><img src="img/2CategoriAccessoire.jpg" alt="produit 8"></a>
+                    <h3>categorie Accessoires</h3>
+                </div>
+                <div class="col-4">
+                    <a href="chapeau.html"><img src="img/2C.Chapeau.jpg" alt="produit 9"></a>
+                    <h3>Categorie Chapeaux</h3>
+                </div>
+                <div class="col-4">
+                    <a href="Montreuil.html"><img src="img/2C.Montreuil.jpg" alt="produit 10"></a>
+                    <h3>Categorie montreuil</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+css:
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.row{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    scroll-snap-align: start;
+} 
+    
+.col-4 {
+    flex-basis: 10%;
+    width:  250px;
+    height: 375px;
+    margin: 15px;
+    border: 1px solid #c5c2be;
+    border-radius: 5px;
+    box-shadow: 0 0 8px var(--pimmary-caractere);
+    background-color: #c5c2be;
+    transition: transform 0.10s;
+    
+}
+
+.col-4:hover{
+    transform: translate(-10px);
+}
+
+.col-4 img{
+    margin: 10px 13px;
+    width:  225px;
+    height: 300px;
+    border-radius: 5px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-4 p{
+    padding: 0 30px;
+    color: rgb(75, 52, 18);
+    font-size: 11px;
+    transition: .9s;
+}
+
+****************************************************/
+/** --
++-----------------------------------------------------------------------------------------------------------------+
+|            Partie scroll automaique: une pharse de motivation consernant toute les formres et tailles           |
++-----------------------------------------------------------------------------------------------------------------+
+-- **/
+.motivation{
+    width: 100%;
+    height: 5%;
+}
+
+.motivation marquee{
+    color: var(--pimmary-caractere);
+    background-color: var(--pimmary-Chocolat);
+}
+/* <!--
++------------------------------------------------+
+|             Soumettez votre prix               |
++------------------------------------------------+
+-- */
+
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 253, 247);
+}
+
+.your{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 20px;
+ }
+ .your img{
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+     border-radius: 50px;
+ }
+ 
+ .your p{
+     font-size: 20px;
+     text-decoration: dashed;
+ }
+ 
+ .footer_int{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 35px;
+ }
+ 
+ .col-5{
+     display: flex; 
+     gap: 10px;   
+ }
+ 
+ .col-5 svg{
+    width: 40px;
+    height: 45px;
+    color: rgb(49, 24, 0);
+}
+
+ /***/
+ .note h1{
+     font-size: 20px;
+     color: var(--pimmary-caractere);
+ }
+ .note p{
+     font-size: 17px;
+ }
+ .footer_end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pimmary-caractere);
+    width: 100%;
+    height: 40px;
+ }
+ 
+
+ /*Animations*/
+
+ @keyframes animation1 {
+    from{
+        transform: translateX(300px);
+    }
+}
+@keyframes animation3 {
+    from{
+        transform: translateY(-300px);
+    }
+}
+
+@keyframes animation2 {
+    from {
+        transform: translateY(-100px);
+    }
+}
+/**
+  Resposiviter
+**/
+

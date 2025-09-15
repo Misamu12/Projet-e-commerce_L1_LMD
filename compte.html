@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="description" content="width=device-width, initial-scale=1.0">
     <title>increz-vous_Pour_Decouvrire nos game de Produits</title>
-    <script src="lauch.js"></script>
 </head>
 <body>
        
@@ -123,9 +122,8 @@
     
 
         <div class="contenaire">
-            <video src="video/videostoredark.mp4" muted loop autoplay width="100%" > </video>
             <div class="inscrire">
-                <form method="post" action="achat.html">
+                <form method="post" action="maputa.html">
                 <div class="inscript">
                     <h1>Créer un Compte</h1>
                     
@@ -175,13 +173,10 @@
             condition_m.textContent = "Accepter les termes et condition";
             condition_m.style.color = "red"
 
-           }else if(cheked.test(cheked.value) == false){
+           } else if(cheked.test(cheked.value) == false)  {
             event.preventDefault();
             condition_m.textContent = "Merci pour votre confiance";
             condition_m.style.color = "black"
-           }
-           else{
-
            }
         }
      </script>
